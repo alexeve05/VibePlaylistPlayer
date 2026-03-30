@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Player</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Choose Your Vibe</h1>
+      <p class="subtitle">don’t overthink it</p>
+      <section class="vibe-grid">
+        <div class="vibe-card" onclick="goToVibe('workout')">
+          <h2>Work Out / Hot Girl</h2>
+          <p>confidence. energy. no skips.</p>
+        </div>
+        <div class="vibe-card" onclick="goToVibe('study')">
+          <h2>Studying / Lock In</h2>
+          <p>focus mode activated</p>
+        </div>
+        <div class="vibe-card" onclick="goToVibe('aux')">
+          <h2>Aux Ready</h2>
+          <p>you have control of the music</p>
+        </div>
+        <div class="vibe-card" onclick="goToVibe('cozy')">
+          <h2>Cozy Comfort</h2>
+          <p>soft. warm. safe.</p>
+        </div>
+        <div class="vibe-card chaotic" onclick="goToVibe('heylol')">
+          <h2>...hey lol</h2>
+          <p>you know why you're here</p>
+        </div>
+      </section>
+      <div class="quiz-section">
+        <button onclick="goToQuiz()">Don’t know? Take a quiz</button>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
