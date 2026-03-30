@@ -1,0 +1,18 @@
+.container{
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    background-color: #929292;
+}
+.quiz-content{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.question{
+    background-color: #d2d2d2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    gap: 2rem;
+}
