@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,26 +8,27 @@
   </head>
   <body>
     <main class="quiz-layout">
-      <!-- opening quiz page-->
-      <div class="screen-text">
+      <!-- INTRO SCREEN -->
+      <div class="intro-screen" id="intro-screen">
         <h1 class="title">Take the Quiz</h1>
         <p class="subtitle">find your perfect vibe</p>
         <div class="opening-selection">
           <button class="start-quiz-button">Start Quiz</button>
-          <button class="back-button" onclick="goToHome()">Back to Home</button>
+          <button class="back-button" onclick="goToHome()">
+            < Back to Home
+          </button>
         </div>
-        <!--quiz content-->
-        <div class="quiz-content">
-          <div class="question">
-            <h2 class="question-text">{{question}}</h2>
-            <button class="question-answer-1">{{answer-choice-1}}</button>
-            <button class="question-answer-2">{{answer-choice-2}}</button>
-            <button class="question-answer-3">{{answer-choice-3}}</button>
-            <button class="question-answer-4">{{answer-choice-4}}</button>
-            <button class="question-answer-5">{{answer-choice-5}}</button>
-          </div>
+      </div>
+      <!-- QUIZ CONTENT -->
+      <div class="quiz-content" id="quiz-content" style="display: none">
+        <p id="progress-text"></p>
+        <div class="question">
+          <h2 id="question-text"></h2>
+          <div id="answers-container"></div>
         </div>
       </div>
     </main>
+    <script src="js/app.js"></script>
+    <script src="js/quiz.js"></script>
   </body>
 </html>
