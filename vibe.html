@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe Player</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <img src="assets/gifs/left.gif" class="decor" />
+        <div class="header-text">
+          <h1 class="title" id="vibe-name"></h1>
+          <p class="vibe-description" id="vibe-description"></p>
+        </div>
+        <img src="assets/gifs/right.gif" class="decor" />
+      </div>
+      <div class="music-recommendations">
+        <h2>Now Playing This Vibe</h2>
+        <div class="spotify-container" id="spotify-embed"></div>
+        <h3>Top Picks</h3>
+        <div class="music-grid">
+          <div class="song">
+            <img />
+            <p></p>
+          </div>
+          <div class="song">
+            <img />
+            <p></p>
+          </div>
+          <div class="song">
+            <img />
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="suggested-activities">
+        <h2>Suggested Activities</h2>
+        <ul id="activities-list"></ul>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
